@@ -1,0 +1,244 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: black;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Acme', sans-serif;
+    font-size: larger;
+  }
+
+  nav img {
+    height: 7rem;
+    width: 7rem;
+    margin: 0%;
+  }
+  nav h1 {
+    color:black;
+    font-family: 'Lobster', cursive;
+    background-color:  black;
+  }
+  
+  nav a {
+    color: #F3C8B8;
+    transition: 0.3s;
+    background-color: black;
+  }
+  nav a:hover {
+    color: #ED3942;
+    border-bottom: rgba(125, 40, 165, 100);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+    background-color: black;
+  }
+  
+  nav ul li {
+    font-weight: 700;
+  }
+
+  main {
+    background-color: #ED3942;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+    
+  }
+
+  .sociales {
+    flex-direction: row;
+    text-align: center;
+    bottom: 50%;
+    margin: 2rem 6rem 0;
+    padding: 1.25rem;
+    position: relative;
+    background-color:#ED3942;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+    margin: 20px;
+    background-color:#ED3942;
+  }
+
+  footer {
+    text-align: center;
+    text-decoration: solid;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #ED3942;
+    height: 200px;
+   }
+
+  a{
+    background-color:#ED3942;
+  }
+
+@media only screen and (max-width: 600px) {
+    nav{
+      font-size: medium;
+    }
+
+    footer{
+      padding: 0.8rem 0rem; 
+    }
+
+    nav img {
+      height: 5rem;
+      width: 5rem;
+      margin: 0%;
+    } 
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      max-width: 68.75rem;
+      margin: auto;
+    }
+  
+    .hero img {
+      height: 10rem;
+      width: 20rem;
+    }
+    
+    .bio h1 {
+      margin-bottom: 0.3rem;
+      
+    }
+    
+    .bio h2 {
+      margin-bottom: 0.3rem;
+    }
+    
+    .bio p {
+      line-height: 1rem;
+      padding: 0.3rem 0;
+      font-size: small;
+    }
+ }
+
+
+ 
+@media only screen and (min-width: 1200px)  {
+
+  .sociales {
+    flex-direction: row;
+    text-align: center;
+    bottom: 50%;
+    margin: 2rem 6rem 0;
+    padding: 1.25rem;
+    position: relative;
+    background-color:#ED3942;
+  }
+  
+  .socicon {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin: 30px;
+    background-color:#ED3942;
+  }
+}
+
+  #signup-form label {
+    margin-bottom: 20px;
+    justify-content:center;
+    display: flex;
+    background-color:#ED3942;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+
+  }
+  
+  #signup-form input[type="text"],
+  #signup-form input[type="email"],
+  #signup-form input[type="comment"] {
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    justify-content:center;
+    display: flex;
+    box-shadow: 1px 2px 15px 2px #0000;
+    margin-left: 10%;
+  }
+  #signup-form input[type="comment"] {
+    height:200px;
+    font-size:14pt;
+    }
+    #signup-form input[type="text"] {
+      height:40px;
+      font-size:14pt;
+      }
+      #signup-form input[type="email"] {
+        height:40px;
+        font-size:14pt;
+        }
+
+
+
+  #signup-form button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #ED3942;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48%;
+
+
+
+  }
+  
+  #signup-form button[type="submit"]:hover {
+    background-color: #ED3942;
+    color: #000000;
+    text-align: center;  
+  }
